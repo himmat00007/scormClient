@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<manifest identifier="zvh3XsI3gDilFvhyIhzqauUBlxM3MnaV32bzuY0g" version="1"
+  xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+  xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                      http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <adlcp:location>metadata.xml</adlcp:location>
+  </metadata>
+  <organizations default="articulate_rise">
+      <organization identifier="articulate_rise">
+      <title>Topic 5: Cloud Service Providers</title>
+      <item identifier="i1" identifierref="r1" isvisible="true">
+        <title>Topic 5: Cloud Service Providers</title>
+        <adlcp:datafromlms>eyJjcHYiOiIzMmJ6dVkwZyIsInJsZCI6ZmFsc2V9</adlcp:datafromlms>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="r1" type="webcontent" adlcp:scormtype="sco" href="scormdriver/indexAPI.html">
+      <!-- SCORMDRIVER STUFF -->
+      <file href="scormdriver/indexAPI.html" />
+      <file href="scormdriver/preloadIntegrity.js" />
+      <file href="scormdriver/driverOptions.js" />
+      <file href="scormdriver/AICCComm.html" />
+      <file href="scormdriver/auto-scripts/AutoBookmark.js" />
+      <file href="scormdriver/auto-scripts/AutoCompleteSCO.js" />
+      <file href="scormdriver/auto-scripts/CourseExit.js" />
+      <file href="scormdriver/blank.html" />
+      <file href="scormdriver/goodbye.html" />
+      <file href="scormdriver/scormdriver.js" />
+      <file href="scormdriver/browsersniff.js" />
+
+      <!-- RUNTIME COMMON STUFF -->
+      <file href="scormcontent/index.html" />
+
+      
+        <file href="scormcontent/lib/fonts/icomoon.ttf"/>
+        <file href="scormcontent/lib/fonts/icomoon.woff"/>
+
+        <file href="scormcontent/lib/icomoon.css"/>
+        <file href="scormcontent/lib/player-0.0.11.min.js"/>
+        <file href="scormcontent/lib/lzwcompress.js"/>
+      
+
+      <!-- FRONTEND BUNDLE ASSETS -->
+      <file href="scormcontent/lib/rise/ec5be72d.js" />
+<file href="scormcontent/lib/rise/11732e6a.css" />
+<file href="scormcontent/lib/rise/86d2a19e.js" />
+<file href="scormcontent/lib/rise/f9aec6d7.css" />
+<file href="scormcontent/lib/rise/cf7b3d29.js" />
+<file href="scormcontent/lib/rise/92e0d0dc.js" />
+<file href="scormcontent/lib/rise/bca1d3e6.js" />
+<file href="scormcontent/lib/mondrian/entry.js" />
+<file href="scormcontent/lib/mondrian/976bee94.js" />
+<file href="scormcontent/lib/mondrian/5397085a.js" />
+<file href="scormcontent/lib/mondrian/b176ca34.js" />
+<file href="scormcontent/lib/mondrian/c16e7dd3.js" />
+<file href="scormcontent/lib/mondrian/d7134136.js" />
+<file href="scormcontent/lib/mondrian/c1257364.js" />
+<file href="scormcontent/lib/mondrian/eab04a62.js" />
+<file href="scormcontent/lib/mondrian/714fc133.js" />
+
+
+      <!-- RUNTIME CONTENT STUFF -->
+      <file href="scormcontent/lib/fonts/QSSC3ohQAFxOArp_-Sora-Italic.woff" />
+<file href="scormcontent/lib/fonts/Kf1guL9EX9airJ1u-Sora-Bold.woff" />
+<file href="scormcontent/lib/fonts/bntlmReF8ataQqMz-Sora-Regular.woff" />
+<file href="scormcontent/lib/fonts/C8vrENsXu159Ystl-Nohemi-Bold.woff" />
+<file href="scormcontent/lib/fonts/m_Z3MqrAaR9jCEPq-Nohemi-Regular.woff" />
+<file href="scormcontent/lib/fonts/Lato-Black.woff" />
+<file href="scormcontent/lib/fonts/Lato-Italic.woff" />
+<file href="scormcontent/lib/fonts/Lato-Bold.woff" />
+<file href="scormcontent/lib/fonts/Lato-Regular.woff" />
+<file href="scormcontent/lib/fonts/Lato-Light.woff" />
+<file href="scormcontent/assets/jUDH9_BI4ko0laag.jpg" />
+<file href="scormcontent/assets/AWS.png" />
+<file href="scormcontent/assets/Microsoft%20Azure.png" />
+<file href="scormcontent/assets/Google%20Cloud%20Platform.png" />
+<file href="scormcontent/assets/AWS%20NEW.png" />
+<file href="scormcontent/assets/Netflix.png" />
+<file href="scormcontent/assets/Peloton.png" />
+<file href="scormcontent/assets/Samsung.png" />
+<file href="scormcontent/assets/Spotify.png" />
+<file href="scormcontent/assets/Expedia.png" />
+<file href="scormcontent/assets/Sony.png" />
+<file href="scormcontent/assets/Airbnb.png" />
+<file href="scormcontent/assets/Pinterest.png" />
+<file href="scormcontent/assets/Novartis.png" />
+<file href="scormcontent/assets/Uber.png" />
+<file href="scormcontent/assets/MA.png" />
+<file href="scormcontent/assets/dKB6g8/quote_background.jpg" />
+<file href="scormcontent/assets/Graphic%203.png" />
+<file href="scormcontent/assets/Wallmart.png" />
+<file href="scormcontent/assets/Coca-Cola.png" />
+<file href="scormcontent/assets/Citigroup.png" />
+<file href="scormcontent/assets/Macky%27s.png" />
+<file href="scormcontent/assets/Bank%20of%20America.png" />
+<file href="scormcontent/assets/Fidelity%20Investments.png" />
+<file href="scormcontent/assets/The%20Home%20Depot.png" />
+<file href="scormcontent/assets/JP%20Morgan%20Chase.png" />
+<file href="scormcontent/assets/Standard%20Chartered.jpg" />
+<file href="scormcontent/assets/Starbucks.png" />
+<file href="scormcontent/assets/GCP.png" />
+<file href="scormcontent/assets/Verizon.png" />
+<file href="scormcontent/assets/NewsCorp.png" />
+<file href="scormcontent/assets/Intel.png" />
+<file href="scormcontent/assets/Twitch.png" />
+<file href="scormcontent/assets/SAP.png" />
+<file href="scormcontent/assets/Yahoo.png" />
+<file href="scormcontent/assets/CenturyLink.png" />
+<file href="scormcontent/assets/Facebook.png" />
+<file href="scormcontent/assets/Marriott.png" />
+<file href="scormcontent/assets/myOsNi4oyRvDVH2G.png" />
+
+      <file href="scormcontent/locales/und.js" />
+
+    </resource>
+  </resources>
+</manifest>

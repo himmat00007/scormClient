@@ -1,84 +1,10 @@
 <html>
 
-  <script src="./scormcontent/scormfunctions.js" type="text/javascript"></script>
+  <!-- <script src="./scormcontent/scormfunctions.js" type="text/javascript"></script> -->
  
    
     <body>
         <iframe id="myFrame"  height="400" width="400" crossorigin="true" src="https://scorm-client.vercel.app/scormdriver/indexAPI.html"></iframe>
     </body>
-    <!-- <script>
-        // Get reference to the iframe
-        var iframe = document.getElementById('myFrame');
-    
-        // Wait for the iframe to load
-        iframe.onload = function() {
-            var API = {
-    // Initialize function
-    LMSInitialize: function(param) {
-        console.log("LMSInitialize(" + param + ")");
-        // Initialize your LMS session here if needed
-        // For demonstration, always return success ("true")
-        return "true"; // Return "true" for success, "false" for failure
-    },
-    
-    // Terminate function
-    LMSFinish: function(param) {
-        console.log("LMSFinish(" + param + ")");
-        // Clean up your LMS session here if needed
-        // For demonstration, always return success ("true")
-        return "true"; // Return "true" for success, "false" for failure
-    },
-    
-    // Retrieve data function
-    LMSGetValue: function(element) {
-        console.log("LMSGetValue(" + element + ")");
-        // Retrieve data from localStorage
-        var value = localStorage.getItem(element);
-        return value !== null ? value : ""; // Return stored value or empty string if not found
-    },
-    
-    // Store data function
-    LMSSetValue: function(element, value) {
-        console.log("LMSSetValue(" + element + ", " + value + ")");
-        // Store data in localStorage
-        localStorage.setItem(element, value);
-        console.log("Stored " + element + " as " + value);
-        return "true"; // Return "true" for success, "false" for failure
-    },
-    
-    // Optional function: Commit data
-    LMSCommit: function(param) {
-        console.log("LMSCommit(" + param + ")");
-        // Optionally commit changes to backend or database
-        // For demonstration, always return success ("true")
-        return "true"; // Return "true" for success, "false" for failure
-    },
-    
-    // Error handling functions
-    
-    // Get last error number
-    LMSGetLastError: function() {
-        console.log("LMSGetLastError()");
-        // Return the last error number (if implemented)
-        return "0"; // Return error number as a string (0 for no error)
-    },
-    
-    // Get error string based on error number
-    LMSGetErrorString: function(errorCode) {
-        console.log("LMSGetErrorString(" + errorCode + ")");
-        // Return error string based on errorCode (if implemented)
-        return "No error"; // Return error string based on errorCode
-    },
-    
-    // Get diagnostic information based on error number
-    LMSGetDiagnostic: function(errorCode) {
-        console.log("LMSGetDiagnostic(" + errorCode + ")");
-        // Return diagnostic information based on errorCode (if implemented)
-        return "No diagnostic information"; // Return diagnostic info based on errorCode
-    }
-};
-          // Set a variable in the iframe's window object
-          iframe.contentWindow.API = API;
-        };
-      </script> -->
+
 </html>

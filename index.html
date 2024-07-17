@@ -1,10 +1,30 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>Authentication Check</title>
+    <style>
+      #authMessage {
+        display: none;
+        color: red;
+        font-size: 20px;
+      }
+    </style>
+    <script>
+      function checkAuthentication() {
+        const authToken = localStorage.getItem('auth_token');
+        
+        if (!authToken) {
+          document.getElementById('authMessage').style.display = 'block';
+        }
+      }
 
-  <script src="./scormcontent/scormfunctions.js" type="text/javascript"></script>
- 
-   
-    <body>
-        <iframe id="myFrame"  height="400" width="400" crossorigin="true" src="https://scorm-client.vercel.app/scormdriver/indexAPI.html"></iframe>
-    </body>
-
+      // Call the checkAuthentication function when the page loads
+      window.onload = checkAuthentication;
+    </script>
+    <script src="./scormcontent/scormfunctions.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="authMessage">User Not Authenticated</div>
+    <iframe id="myFrame" height="400" width="400" crossorigin="true" src="https://scorm-client.vercel.app/scormdriver/indexAPI.html"></iframe>
+  </body>
 </html>

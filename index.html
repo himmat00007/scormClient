@@ -7,6 +7,25 @@
         color: red;
         font-size: 20px;
       }
+      #overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background: transparent;
+      }
+      iframe {
+        position: relative;
+        z-index: 1;
+        pointer-events: none; /* Prevents interaction with iframe */
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Prevents scrollbars */
+      }
     </style>
     <script>
       function checkAuthentication() {
@@ -16,17 +35,26 @@
           // If auth_token is not found, display an error message
           document.getElementById('authMessage').style.display = 'block';
         } else {
-          // If auth_token is found, create and append the iframe
+          // If auth_token is found, create and append the iframe and overlay
           const iframe = document.createElement('iframe');
           iframe.id = 'myFrame';
-          iframe.height = '400';
-          iframe.width = '400';
+          iframe.height = '100%';
+          iframe.width = '100%';
           iframe.crossOrigin = 'true';
           iframe.src = 'https://scorm-client.vercel.app/scormdriver/indexAPI.html';
 
           document.body.appendChild(iframe);
+
+          // Create and append the overlay
+          const overlay = document.createElement('div');
+          overlay.id = 'overlay';
+
+          document.body.appendChild(overlay);
         }
       }
+
+      // Disable right-click context menu
+      document.addEventListener('contextmenu', event => event.preventDefault());
 
       // Call the checkAuthentication function when the page loads
       window.onload = checkAuthentication;
@@ -35,6 +63,6 @@
   </head>
   <body>
     <div id="authMessage" style="display: none;">User Not Authenticated</div>
-    <!-- The iframe will be dynamically added here if the user is authenticated -->
+    <!-- The iframe and overlay will be dynamically added here if the user is authenticated -->
   </body>
 </html>

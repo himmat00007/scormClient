@@ -12,20 +12,17 @@
       function checkAuthentication() {
         const authToken = true
 
-        if (!authToken) {
-          // If auth_token is not found, display an error message
-          document.getElementById('authMessage').style.display = 'block';
-        } else {
+     
           // If auth_token is found, create and append the iframe
           const iframe = document.createElement('iframe');
           iframe.id = 'myFrame';
           iframe.height = '400';
           iframe.width = '400';
           iframe.crossOrigin = 'true';
-          iframe.src = 'https://saraslmsdev.blob.core.windows.net/scorm/topic-5/scormdriver/indexAPI.html';
+          iframe.src = 'https://scorm-client.vercel.app/scormdriver/indexAPI.html';
 
           document.body.appendChild(iframe);
-        }
+
       }
 
       // Call the checkAuthentication function when the page loads
